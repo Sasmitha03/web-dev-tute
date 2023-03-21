@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial 6</title>
+	<style>
+		body{
+			background-color : #666;
+		}
+		
+		.container{
+			width :1000px;
+			margin-left: auto;
+			margin-right:auto;
+		}
+	
+		h1{
+			font-family: Papyrus;
+			fantasy;color: white;
+			text-align: center;
+			font-size: 40px;
+			margin: 40px 20px 80px 20px;
+		}
+		
+		.product1,.product2,.product3{
+			height: 400px;
+			width :234px;
+			background-color: white;
+			float: left;	
+			margin: 10px 10px;
+		
+		}
+		
+		.description{
+			text-align: center; 
+			font-size: 20px; 
+			font-weight: bold;
+			color: #333; 
+			padding-top: 20px; 
+			height: 120px;
+			position: relative;
+		}
+		
+		.labelOrder {
+			margin: -75px 10px 0 0;
+			padding-top: 25px;
+			width: 258px;
+			height: 460px;
+			background-color: #ccc;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+		    margin-left: 780px;
+			margin-top: -48px;
+	    }
+		
+		#order {
+			height: 57px;
+			width: 1050px;
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: #4d545e;
+			margin-top: 20px;
+		}
+		
+		#orderDescription {
+			font-size: 16px;
+			height: 400px;
+			background-color: white;
+			margin: 10px 10px;
+			margin-top: 10px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Valentine's Flowers</h1>
+	
+	
+	<div class = "product1">
+		<img src="white.jpeg" alt="white" id="white">
+		<div class="description">
+			<p>White Bouquet</p>
+			<p>&#163 24</p>
+		</div>
+	</div>
+	
+	<div class = "product2">
+		<img src="pink.jpeg" alt="pink" id="pink">
+		<div class="description">
+			<p>Pink Bouquet</p>
+			<p>&#163 24</p>
+
+		</div>
+	</div>
+	
+	<div class = "product3">
+		<img src="red.jpeg" alt="red" id="red">
+		<div class="description">
+			<p>Red Bouquet</p>
+			<p>&#163 20</p>
+
+		</div>
+	</div>
+	
+	<div class="labelOrder">
+		Your Order:
+		<div id="orderDescription"></div>
+	</div>
+
+	<div class="product" id="order"></div>
+
+</div>
+</body>
