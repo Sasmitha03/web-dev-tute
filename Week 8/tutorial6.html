@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial 6</title>
+	<style>
+		#correct{
+			color: green;
+			font-weight: bold;
+		}
+		
+		#incorrect{
+			color: red;
+			font-weight: bold;
+		}
+	
+	
+	</style>
+</head>
+<body>
+	<h1>A Simple Maths Game</h1>
+	
+	<p>
+		<strong>Question1</strong>
+		<br>
+		<span id ="question1"></span>
+		<span id = "answer1">  </span>
+		<span id ="feedback1"></span>
+	</p>
+	
+	<p>
+		<strong>Question2</strong>
+		<br>
+		<span id ="question2">Question</span>
+		<span id = "answer2"></span>
+		<span id ="feedback2"></span>
+	</p>
+	
+	<p>
+		<strong>Question3</strong>
+		<br>
+		<span id ="question3">Question</span>
+		<span id = "answer3"></span>
+		<span id ="feedback3"></span>
+	</p>
+	
+	<p>
+		<strong>Question4</strong>
+		<br>
+		<span id ="question4">Question</span>
+		<span id = "answer4"></span>
+		<span id ="feedback4"></span>
+	</p>
+	
+	<p>
+		<strong>Question5</strong>
+		<br>
+		<span id ="question5">Question</span>
+		<span id = "answer5"></span>
+		<span id ="feedback5"></span>
+	</p>
+	
+	<p>
+		<strong>Question6</strong>
+		<br>
+		<span id ="question6">Question</span>
+		<span id = "answer6"></span>
+		<span id ="feedback6"></span>
+	</p>
+	
+	<p>
+		<strong>Question7</strong>
+		<br>
+		<span id ="question7">Question</span>
+		<span id = "answer7"></span>
+		<span id ="feedback7"></span>
+	</p>
+	
+	<p>
+		<strong>Question8</strong>
+		<br>
+		<span id ="question8">Question</span>
+		<span id = "answer8"></span>
+		<span id ="feedback8"></span>
+	</p>
+	
+	<p>
+		<strong>Question9</strong>
+		<br>
+		<span id ="question9">Question</span>
+		<span id = "answer9"></span>
+		<span id ="feedback9"></span>
+	</p>
+	
+	<p>
+		<strong>Question10</strong>
+		<br>
+		<span id ="question10">Question</span>
+		<span id = "answer10"></span>
+		<span id ="feedback10"></span>
+	</p>
+	
+	
+	<script>
+		
+		function get_user_input(number1, number2){
+				var input = prompt("Enter the answer of the following: " + number1 + " + " + number2);
+				return input;
+			}
+			
+		function validate_user_input(userAnswer , correctAnswer){
+			if(userAnswer == correctAnswer){
+				return true;
+			} else {
+				return false;
+			}
+		}
+		
+		for (var i=1; i<10; i++){
+
+			var number1 = Math.ceil(Math.random() * 10);
+			var number2 = Math.ceil(Math.random() * 10);
+			var answer = number1 + number2;
+			
+			var userAnswer = get_user_input(number1, number2);
+			
+			document.getElementById("question" + i).innerHTML =number1 + " + " + number2 + " = ";
+			document.getElementById("answer" + i).innerHTML = userAnswer;
+			document.getElementById("feedback" + i).innerHTML = validate_user_input(userAnswer, answer);
+
+
+		}
+		
+	</script>
+</body>
